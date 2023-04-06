@@ -1,0 +1,35 @@
+DYNAMIC PROGRAMMING:
+
+Non-overlapping activities using dynamic programming:
+Activity from 4 to 24
+Activity from 30 to 33
+Activity from 37 to 43
+Activity from 44 to 56
+Activity from 68 to 70
+Activity from 76 to 84
+Activity from 94 to 95
+Activity from 98 to 101
+
+Maximum count of non-overlapping activities using dynamic programming is: 8
+
+
+GREEDY ALGORITHM:
+
+Non-overlapping activities using greedy algorithm:
+Activity from 4 to 24
+Activity from 30 to 33
+Activity from 37 to 43
+Activity from 44 to 56
+Activity from 68 to 70
+Activity from 76 to 84
+Activity from 94 to 95
+Activity from 98 to 101
+
+Maximum count of non-overlapping activities using greedy algorithm is: 8
+
+
+Dynamic Programming :
+Time taken: 0.000110 seconds
+
+Greedy Algorithm :
+Time taken: 0.000058 seconds
