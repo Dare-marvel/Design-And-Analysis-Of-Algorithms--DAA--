@@ -1,10 +1,19 @@
-// This code is written by Adwait Purao
+### [Articles to refer]()
+
+## Key Insights :
+This code generates the dimensions of 10 matrices using rand() function in C
+Then it generates 10 random matrices
+Then it multiplies them in serial order
+
+## Code :
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
 #include <string.h>
 #include <time.h>
 
+// Function to print a matrix
 void print_mat(int rows, int cols, int **X)
 {
     for (int i = 0; i < rows; i++)
@@ -17,12 +26,14 @@ void print_mat(int rows, int cols, int **X)
     }
 }
 
+// Function to print a range of matrices
 void print_mat_range(int k, int sizes[10][2], int ***arr_of_mat)
 {
     printf("M%d (%d x %d)\n", k, sizes[k - 1][0], sizes[k - 1][1]);
     print_mat(sizes[k - 1][0], sizes[k - 1][1], arr_of_mat[k - 1]);
 }
 
+// Function to add two matrices
 int **add(int **A, int **B, int **C, int n)
 {
     int i, j;
@@ -36,6 +47,7 @@ int **add(int **A, int **B, int **C, int n)
     return C;
 }
 
+// Function to subtract two matrices
 int **subtract(int **A, int **B, int **C, int n)
 {
     int i, j;
@@ -49,6 +61,7 @@ int **subtract(int **A, int **B, int **C, int n)
     return C;
 }
 
+// Function to initialize a matrix with given dimensions to 0
 void Init(int **mat, int r, int c)
 {
     for (int i = 0; i < r; i++)
@@ -60,6 +73,7 @@ void Init(int **mat, int r, int c)
     }
 }
 
+// Function to multiply two matrices
 int **mat_mult(int **result, int **A, int **B, int n, int m, int p)
 {
     int sum;
@@ -167,7 +181,6 @@ int main()
     
     Init(prevRes, sizes[0][0],sizes[1][1]);
     
-    // printf("\n\ncheck1\n");
     clock_t sttime2 = clock();
     mat_mult(result2,pre1,pre2,48,48,48);
     // printf("\nprevRes: (%d x %d)\n", sizes[0][0], sizes[1][1]);
@@ -204,3 +217,4 @@ int main()
     free(prevRes);
     return 0;   
 }
+```
