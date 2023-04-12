@@ -226,6 +226,7 @@ int main()
 }
 ```
 ## Output:
+```c
 Sizes
 1 19 
 19 15 
@@ -481,3 +482,4 @@ M10 (16 x 5)
 
 Resultant Matrix (from method 1 - Linear Matrix Multiplication): (1 x 5)
 8 7 7 5 8 
+```
