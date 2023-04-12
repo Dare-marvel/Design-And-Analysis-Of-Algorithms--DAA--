@@ -1,4 +1,4 @@
-### [Articles to refer]()
+### [Articles to refer](https://www.geeksforgeeks.org/c-program-multiply-two-matrices/)
 
 ## Key Insights :
 This code generates the dimensions of 10 matrices using rand() function in C
@@ -99,12 +99,14 @@ int main()
 
     int min = 1, max = 48, numb;
     int randomNum[11];
+    // Generate random numbers
     for (int i = 0; i < 11; i++)
     {
         numb = (rand() % (max - min + 1)) + min;
         randomNum[i] = numb;
     }
     int sizes[10][2];
+    // Store the sizes accordingly
     for (int i = 0; i < 10; i++)
     {
         sizes[i][0] = randomNum[i];
@@ -117,6 +119,8 @@ int main()
             printf("%d ", sizes[i][j]);
         printf("\n");
     }
+    
+    // Allocating memory for the 3d matrix which holds 10 2d matrices
     int ***arr_of_mat;
     arr_of_mat = (int ***)malloc(10 * sizeof(int **));
     for (int i = 0; i < 48; i++)
@@ -125,10 +129,11 @@ int main()
         for (int j = 0; j < 48; j++)
         {
             arr_of_mat[i][j] = (int *)malloc(48 * sizeof(int));
-            // Initialize arr_of_mat[i][j] here
         }
     }
 
+    // Initializing every element to zero as the dimension of the matrix would always be less than 48 , so to avoid garbage values
+    // Initialize every element with zero and then just fill the other values
     for (int i = 0; i < 10; i++)
     {
         for (int j = 0; j < 48; j++)
@@ -141,6 +146,7 @@ int main()
     }
 
     int num;
+    // Generate 10 matrices with random values
     for (int i = 0; i < 10; i++)
     {
         int m = sizes[i][0];
@@ -157,13 +163,14 @@ int main()
         }
     }
     
-    
+    // Print the randomly generated matrices
     printf("\n Matrices:\n");
     for (int i = 1; i < 11; i++)
     {
         print_mat_range(i, sizes, arr_of_mat);
     }
     
+    // Actual matrix multiplication starts
     int **result2 = (int **)malloc(48 * sizeof(int *));
     int **prevRes = (int **)malloc(48 * sizeof(int *));
     for (int i = 0; i < 48; i++)
