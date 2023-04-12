@@ -181,17 +181,11 @@ int main()
     
     int ** pre1 = arr_of_mat[0];
     int ** pre2 = arr_of_mat[1];
-    printf("pre1\n");
-    print_mat(sizes[0][0],sizes[0][1],pre1);
-    printf("pre2\n");
-    print_mat(sizes[1][0],sizes[1][1],pre2);
     
     Init(prevRes, sizes[0][0],sizes[1][1]);
     
     clock_t sttime2 = clock();
     mat_mult(result2,pre1,pre2,48,48,48);
-    // printf("\nprevRes: (%d x %d)\n", sizes[0][0], sizes[1][1]);
-    // print_mat(sizes[0][0],sizes[1][1],prevRes);
     
     for (int i = 1; i < 9; i++)
     {
