@@ -3,7 +3,7 @@
 ## Brief Description:
 It generates first the dimensions of ten random matrices and then generates matrices based on those dimensions<br> 
 The code then generates the optimal order of parenthesization and the minimum number of multiplications required<br>
-It then multplies the matrices in optimal order using a recursive function described in Key Insights<br>
+It then multplies the matrices in optimal order using a recursive function (by normal matrix multiplication) described in Key Insights<br>
 
 ## Key Insights:
 Function to be looked at:
