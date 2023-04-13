@@ -1,4 +1,4 @@
-### [Articles to refer]()
+### [Articles to refer](https://www.geeksforgeeks.org/matrix-chain-multiplication-dp-8/)
 
 ## Brief Description:
 
