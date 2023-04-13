@@ -1,3 +1,11 @@
+### [Growth of functions](https://www.cs.sfu.ca/~ggbaker/zju/math/growth.html)
+
+## Brief Description:
+This function analyzes the growth of some functions<br>
+It implements these functions and check the growth of functions with the help of values it returns<br>
+
+## Code :
+```c
 #include <stdio.h>
 #include <math.h>
 
@@ -181,3 +189,4 @@ int main()
     // }
     return 0;
 }
+```
