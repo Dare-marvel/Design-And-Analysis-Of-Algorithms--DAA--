@@ -9,7 +9,6 @@ Sizes
 30 32 
 32 16 
 16 5 
-0 0 
 
  Matrices:
 M1 (1 x 19)
