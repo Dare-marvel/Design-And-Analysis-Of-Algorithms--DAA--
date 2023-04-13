@@ -398,7 +398,6 @@ Sizes
 16 1 
 1 7 
 7 3 
-0 0 
 
  Matrices:
 M1 (3 x 1)
