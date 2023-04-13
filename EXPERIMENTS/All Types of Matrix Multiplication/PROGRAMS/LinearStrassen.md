@@ -1,4 +1,11 @@
-// This code is written by Adwait Purao
+### [Articles to refer]()
+
+## Brief Description:
+
+## Key Insights:
+
+## Code:
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
@@ -377,3 +384,4 @@ int main()
     free(prevRes);
     return 0;   
 }
+```
