@@ -1,9 +1,11 @@
 ### [Articles to refer](https://www.geeksforgeeks.org/c-program-multiply-two-matrices/)
 
-## Key Insights :
+## Brief Description :
 This code generates the dimensions of 10 matrices using rand() function in C<br>
 Then it generates 10 random matrices<br>
-Then it multiplies them in serial order<br>
+Then it multiplies them in serial order using normal matrix multiplication<br>
+
+## Key Insights :
 
 ## Code :
 ```c
@@ -113,7 +115,7 @@ int main()
         sizes[i][1] = randomNum[i + 1];
     }
     printf("Sizes\n");
-    for (int i = 0; i < 11; i++)
+    for (int i = 0; i < 10; i++)
     {
         for (int j = 0; j < 2; j++)
             printf("%d ", sizes[i][j]);
@@ -233,7 +235,6 @@ Sizes
 30 32 
 32 16 
 16 5 
-0 0 
 
  Matrices:
 M1 (1 x 19)
