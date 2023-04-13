@@ -1,3 +1,11 @@
+### [Articles to refer]()
+
+## Brief Description:
+
+## Key Insights:
+
+## Code :
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
@@ -361,7 +369,7 @@ int main()
         sizes[i][1] = randomNum[i + 1];
     }
     printf("Sizes\n");
-    for (int i = 0; i < 11; i++)
+    for (int i = 0; i < 10; i++)
     {
         for (int j = 0; j < 2; j++)
             printf("%d ", sizes[i][j]);
@@ -426,4 +434,4 @@ int main()
     print_mat(sizes[0][0], sizes[9][1], result);
     return 0;
 }
-
+```
