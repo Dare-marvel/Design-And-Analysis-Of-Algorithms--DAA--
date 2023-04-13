@@ -6,6 +6,30 @@ Then it generates 10 random matrices<br>
 Then it multiplies them in serial order using normal matrix multiplication<br>
 
 ## Key Insights :
+Code to be looked at
+```c
+for (int i = 1; i < 9; i++)
+    {
+        int **matrix1 = arr_of_mat[i+1];
+        Init(result2,48,48);
+        mat_mult(result2,pre1,pre2,48,48,48);
+        Init(prevRes,48,48);
+        for (int j = 0; j < 48; j++)
+        {
+            for (int k = 0; k < 48; k++)
+            {
+                prevRes[j][k] = result2[j][k];
+            }
+        }
+        // printf("\n\nResult at step : %d\n\n",i+1);
+        // print_mat(sizes[0][0],sizes[i+1][1],result2);
+    }
+    double time2 = (double)(clock() - sttime2) / CLOCKS_PER_SEC;
+```
+We need to note here that we can't pass the 3d matrix directly to the function as the function needs a pointer to a 2d matrix only<br>
+So we initialize a 2d matrix with the (i+1)th 2d matrix in the array of 2d matrices , so that we can pass it to the function<br>
+We initialize result to zero everytime before computing it , so that we avoid all the garbage values<br>
+After computing the result we initialize prevRes to zero to avoid garbage values while storing result in it<br>
 
 ## Code :
 ```c
