@@ -2,9 +2,16 @@
 
 ## Brief Description:
 It generates first the dimensions of ten random matrices and then generates matrices based on those dimensions<br> 
-The code then generates the optimal order of parenthesization and the minimum number of multiplications required
+The code then generates the optimal order of parenthesization and the minimum number of multiplications required<br>
+It then multplies the matrices in optimal order using a recursive function described in Key Insights<br>
 
 ## Key Insights:
+Function to be looked at:
+```c
+int **multiplyMatricesOptimalOrder(int ***matrices, int **kmat, int i, int j, int n)
+```
+The function takes in a 3D array of matrices, an array of matrix dimensions, and the indices of the first and last matrices in the<br> sequence. It returns a 2D array that represents the product of the matrices in the sequence.<br>
+The function first checks if the given sequence contains only one matrix, in which case it simply returns a copy of that matrix.<br> Otherwise, it divides the sequence into two sub-sequences and recursively computes the products of the sub-sequences. It then multiplies<br>the resulting matrices using the optimal order determined by the optimal matrix chain multiplication algorithm.<br>
 
 ## Code :
 ```c
