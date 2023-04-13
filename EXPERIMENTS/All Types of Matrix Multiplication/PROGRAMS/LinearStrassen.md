@@ -1,8 +1,33 @@
-### [Articles to refer]()
+### [Articles to refer](https://www.geeksforgeeks.org/strassens-matrix-multiplication/)
 
 ## Brief Description:
+It generates first the dimensions of ten random matrices and then generates matrices based on those dimensions<br> 
+Then it multiplies those matrices considering them to be square matrices ( normal matrices with padded zeros )<br>
 
 ## Key Insights:
+Code to be looked at
+```c
+for (int i = 1; i < 9; i++)
+    {
+        int **matrix1 = arr_of_mat[i+1];
+        Init(result2,16,16);
+        StrassenMultiplication(prevRes, matrix1,result2,16);
+        Init(prevRes,16,16);
+        for (int j = 0; j < 16; j++)
+        {
+            for (int k = 0; k < 16; k++)
+            {
+                prevRes[j][k] = result2[j][k];
+            }
+        }
+        // printf("\n\nResult at step : %d\n\n",i+1);
+        // print_mat(sizes[0][0],sizes[i+1][1],result2);
+    }
+```
+We need to note here that we can't pass the 3d matrix directly to the function as the function needs a pointer to a 2d matrix only<br>
+So we initialize a 2d matrix with the (i+1)th 2d matrix in the array of 2d matrices , so that we can pass it to the function<br>
+We initialize result to zero everytime before computing it , so that we avoid all the garbage values<br>
+After computing the result we initialize prevRes to zero to avoid garbage values while storing result in it<br>
 
 ## Code:
 ```c
