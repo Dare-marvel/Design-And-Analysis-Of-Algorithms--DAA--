@@ -11,7 +11,8 @@ Function to be looked at:
 ```c
 int **strassenOptimalOrder(int ***matrices, int **kmat, int i, int j, int n)
 ```
-
+The function takes in a 3D array of matrices, an array of matrix dimensions, and the indices of the first and last matrices in the<br> sequence. It returns a 2D array that represents the product of the matrices in the sequence.<br>
+The function first checks if the given sequence contains only one matrix, in which case it simply returns a copy of that matrix.<br> Otherwise, it divides the sequence into two sub-sequences and recursively computes the products of the sub-sequences. It then multiplies the resulting matrices using the optimal order determined by the optimal matrix chain multiplication algorithm.<br>
 
 ## Code :
 ```c
