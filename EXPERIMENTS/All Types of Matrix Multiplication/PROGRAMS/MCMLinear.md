@@ -1,6 +1,8 @@
 ### [Articles to refer](https://www.geeksforgeeks.org/matrix-chain-multiplication-dp-8/)
 
 ## Brief Description:
+It generates first the dimensions of ten random matrices and then generates matrices based on those dimensions<br> 
+The code then generates the optimal order of parenthesization and the minimum number of multiplications required
 
 ## Key Insights:
 
