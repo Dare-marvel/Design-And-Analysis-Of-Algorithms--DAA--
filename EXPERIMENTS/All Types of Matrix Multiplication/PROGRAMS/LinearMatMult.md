@@ -1,9 +1,9 @@
 ### [Articles to refer](https://www.geeksforgeeks.org/c-program-multiply-two-matrices/)
 
 ## Key Insights :
-This code generates the dimensions of 10 matrices using rand() function in C
-Then it generates 10 random matrices
-Then it multiplies them in serial order
+This code generates the dimensions of 10 matrices using rand() function in C<br>
+Then it generates 10 random matrices<br>
+Then it multiplies them in serial order<br>
 
 ## Code :
 ```c
