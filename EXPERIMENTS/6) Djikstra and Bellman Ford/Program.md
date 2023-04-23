@@ -1,3 +1,7 @@
+[Bellman-Ford Algorithm](https://www.youtube.com/watch?v=HYefC2QRNbg&ab_channel=eLearningBihar)
+[Dijkstra's Algorithm](https://www.youtube.com/watch?v=XB4MIexjvY0&ab_channel=AbdulBari)
+
+## Code:
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
