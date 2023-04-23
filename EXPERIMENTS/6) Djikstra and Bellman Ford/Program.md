@@ -1,4 +1,7 @@
-### [Bellman-Ford Algorithm](https://www.youtube.com/watch?v=HYefC2QRNbg&ab_channel=eLearningBihar)
+### Bellman-Ford Algorithm
+#####[Link 1](https://www.youtube.com/watch?v=HYefC2QRNbg&ab_channel=eLearningBihar)
+#####[Link 2](https://www.youtube.com/watch?v=T_jIM6_JrQM&ab_channel=Tutorialspoint)
+
 ### [Dijkstra's Algorithm](https://www.youtube.com/watch?v=XB4MIexjvY0&ab_channel=AbdulBari)
 
 ## Code:
