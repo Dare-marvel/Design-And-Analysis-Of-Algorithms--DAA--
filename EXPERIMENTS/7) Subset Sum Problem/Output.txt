@@ -1,0 +1,15 @@
+Enter the number of elements:7
+Enter the weights of the elements:
+1
+2
+3
+4
+5
+6
+7
+Enter the desired sum: 7
+{ 1 2 4 }
+{ 1 6 }
+{ 2 5 }
+{ 3 4 }
+{ 7 }
