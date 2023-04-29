@@ -1,3 +1,27 @@
+### [Vertex Cover Problem](https://www.geeksforgeeks.org/introduction-and-approximate-solution-for-vertex-cover-problem/)
+
+## Explanation of main logic of the function:
+The printVertexCover function in the code is used to find the minimum vertex cover of an undirected graph using a greedy algorithm.
+
+The function starts by initializing a boolean array visited of size V, where V is the number of vertices in the graph. All the values in the array are set to false initially.
+
+The function then considers each vertex of the graph one by one. For each vertex u, it checks if visited[u] is false. If it is true, it means that the vertex u has already been covered by some other vertex in the previous iteration, so it moves to the next vertex.
+
+If visited[u] is false, the function goes through all the adjacent vertices of u using an iterator i. For each adjacent vertex v, it checks if visited[v] is false. If it is also false, it means that both the vertices u and v are not yet covered by any other vertex, so the function selects this edge (u,v) and adds both u and v to the vertex cover set. It then marks visited[u] and visited[v] as true so that they are not considered in the next iteration.
+
+The function continues this process for all vertices until all vertices are marked as visited.
+
+Finally, the function prints the vertex cover set by iterating over all vertices and printing those vertices whose value in the visited array is true.
+
+The algorithm follows a greedy approach by selecting an uncovered edge and adding its both endpoints to the vertex cover set. The greedy approach is guaranteed to find a vertex cover with size no more than twice the size of an optimal vertex cover.
+
+## Time and Space Complexity:
+### `Time Complexity`:
+The time complexity of the function is O(V+E), where V is the number of vertices and E is the number of edges in the graph. This is because the function loops through each vertex and its adjacent vertices, and each edge is processed only once.
+
+### `Space Complexity`:
+The space complexity of the function is O(V), where V is the number of vertices in the graph. This is because the function uses a boolean array to keep track of visited vertices.
+
 ## Code:
 ```cpp
 #include<iostream>
