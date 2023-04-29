@@ -1,4 +1,4 @@
-[Subset Sum Problem](https://www.geeksforgeeks.org/subset-sum-problem/)
+### [Subset Sum Problem](https://www.geeksforgeeks.org/subset-sum-problem/)
 
 ## Explanation of BackTrack function
 The backtrack function is the core of the code, and it uses recursion to generate all possible subsets of the input set and check if the sum of each subset matches the desired sum.
@@ -14,10 +14,10 @@ After the left child exploration is complete, the function backtracks by excludi
 This process continues until all possible subsets of the input set are explored. The backtrack function explores the search tree recursively and prunes the branches that exceed the desired sum. The output of the function is all the subsets of the input set whose sum matches the desired sum.
 
 ## Time and Space Complexity :
-`Time Complexity`
+`Time Complexity`<br>
 The time complexity of the backtrack function is O(2^n), where n is the number of elements in the input set. This is because the function explores all possible subsets of the input set, which is a binary tree with 2^n nodes. Each node in the tree represents a subset of the input set.
 
-`Space Complexity`
+`Space Complexity`<br>
 The space complexity of the function is O(n), where n is the number of elements in the input set. This is because the function uses two arrays of size n to store the binary vector representing a subset and the weights of the n elements. Additionally, the function uses three integer variables to store the current element index, the desired sum, and the sum of elements in a subset. The function does not use any additional data structures or variables, so the space complexity is linear in n.
 
 ## Code:
