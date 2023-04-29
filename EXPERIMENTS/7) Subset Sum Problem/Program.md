@@ -1,3 +1,5 @@
+## Code:
+```c
 #include <stdio.h>
 
 #define MAX_N 100
@@ -37,3 +39,4 @@ int main() {
     backtrack(0);
     return 0;
 }
+```
