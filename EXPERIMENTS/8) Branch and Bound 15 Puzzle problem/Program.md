@@ -1,3 +1,5 @@
+## Code:
+```cpp
 // Program to print path from root node to destination node
 // for N*N -1 puzzle algorithm using Branch and Bound
 // The solution assumes that instance of puzzle is solvable
@@ -193,3 +195,4 @@ int main() {
 
     return 0;
 }
+```
