@@ -1,3 +1,26 @@
+## Explanation of Rabin Karp function:
+The Rabin-Karp algorithm is a string searching algorithm that works by hashing the pattern and comparing it to substrings of the text. The logic of the Rabin-Karp function in this code is as follows:
+
+* Get the length of the text and the pattern.
+* Initialize variables pattern_hash and text_hash to 0.
+* Initialize h to 1, which will be used in the hash function.
+* Calculate h as d^(pattern_length-1), where d is the number of characters in the input alphabet, and q is a prime number used for hashing.
+* Calculate the hash value of the pattern and the first window of text using the formula hash = (d * hash + character) % q, where hash is either pattern_hash or text_hash.
+* Slide the pattern over the text one by one.
+* Check if the hash values of the pattern and current window of text match.
+* If they match, check if all characters of pattern match the current window of text.
+* If all characters match, print the starting and ending indices of the match.
+* Calculate the hash value of the next window of text using the formula hash = (d * (hash - character_at_start_of_window * h) + character_at_end_of_window) % q.
+* If the hash value is negative, make it positive by adding q.
+* This algorithm works by using a rolling hash function, which allows the hash of a substring to be calculated efficiently by using the hash of the previous substring. This avoids having to recalculate the hash for each substring, which can be time-consuming. The algorithm also makes use of modular arithmetic to prevent overflow when calculating the hash value.
+
+## Time and Space Complexity:
+### `Time Complexity`
+The time complexity of the Rabin-Karp algorithm depends on the hash function used, which in this case is a simple polynomial rolling hash function. The worst-case time complexity of the algorithm is O((n-m+1)*m), where n is the length of the text and m is the length of the pattern. However, on average, the algorithm has a much better performance than the worst-case complexity, and its time complexity is usually O(n+m) when the hash function works well.
+
+### `Space Complexity`
+The space complexity of the algorithm is O(1) because the only extra space used is for storing some variables such as the hash values and loop counters. Therefore, the space complexity is constant and does not depend on the size of the input.
+
 ## Code:
 ```c
 #include <stdio.h>
