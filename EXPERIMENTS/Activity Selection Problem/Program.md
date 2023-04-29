@@ -10,18 +10,18 @@ The activitySelectionGREEDY function implements the greedy approach to find the 
 The function first sorts the activities in increasing order of their end times using the bubbleSort function. It then initializes an array nonOverlap to store the non-overlapping activities. It sets the first activity as the non-overlapping activity and sets the count of non-overlapping activities to 1. It then loops through the activities and checks if an activity can be performed without overlapping with the previous non-overlapping activity. If it can be performed, it adds it to the array of non-overlapping activities, increments the count of non-overlapping activities, and prints the activity. Finally, it returns the non-overlapping activities and its count.
 
 ## Time and Space Complexity:
-#### Dynamic Programming Approach:
-`Time Complexity`<br> 
+### Dynamic Programming Approach:
+#### `Time Complexity`
 `O(n^2)`, where n is the number of activities. The nested loops in the dynamic programming approach iterate over all the pairs of activities and the overall time complexity becomes quadratic.
 
-`Space Complexity`<br>
+#### `Space Complexity`
 `O(n)`, where n is the number of activities. The space required to store the dynamic programming array of size n.
 
-#### Greedy Approach:
-`Time Complexity`<br>
+### Greedy Approach:
+#### `Time Complexity`
 `O(n log n)`, where n is the number of activities. The time complexity of the sorting algorithm used (bubble sort) is O(n^2) in the worst case, but since the activities are sorted by end time, each iteration of the algorithm takes less time than the previous one. Hence, the overall time complexity becomes O(n log n).
 
-`Space Complexity`<br>
+#### `Space Complexity`
 `O(n)`, where n is the number of activities. The space required to store the array of activities and the array of non-overlapping activities of size n.
 
 ## Code:
