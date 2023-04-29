@@ -1,10 +1,10 @@
 ## Explanation of the Code:
-`Dynamic Programming`<br>
+### `Dynamic Programming`<br>
 The activitySelectionDP function implements the dynamic programming approach to find the maximum number of non-overlapping activities that can be performed by a single person. It takes an array of activities, its size, an array to store the non-overlapping activities, and a pointer to the variable to store the count of non-overlapping activities as input. It returns the maximum count of non-overlapping activities.
 
 The function first sorts the activities in increasing order of their end times using the bubbleSort function. It then initializes an array dp of size n to store the maximum count of non-conflicting activities till the i-th activity. It then loops through the activities and calculates the maximum count of non-overlapping activities till that activity using the formula dp[i] = dp[j] + 1 if arr[j].end is less than or equal to arr[i].start. It then finds the maximum count of non-overlapping activities in dp. Finally, it prints the non-overlapping activities and returns the maximum count of non-overlapping activities.
 
-`Greedy Approach`<br>
+### `Greedy Approach`<br>
 The activitySelectionGREEDY function implements the greedy approach to find the maximum number of non-overlapping activities that can be performed by a single person. It takes an array of activities, its size, an array to store the non-overlapping activities, and a pointer to the variable to store the count of non-overlapping activities as input. It returns void.
 
 The function first sorts the activities in increasing order of their end times using the bubbleSort function. It then initializes an array nonOverlap to store the non-overlapping activities. It sets the first activity as the non-overlapping activity and sets the count of non-overlapping activities to 1. It then loops through the activities and checks if an activity can be performed without overlapping with the previous non-overlapping activity. If it can be performed, it adds it to the array of non-overlapping activities, increments the count of non-overlapping activities, and prints the activity. Finally, it returns the non-overlapping activities and its count.
