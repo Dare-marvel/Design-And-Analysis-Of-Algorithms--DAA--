@@ -15,10 +15,10 @@ Note that the priority queue is ordered based on the estimated cost of each node
 
 ## Time and Space Complexity:
 ### `Time Complexity`
-The time complexity of the solve function depends on the size of the search space and the efficiency of the heuristic function. In the worst case, the algorithm explores the entire search space, which is of size O((N^2)!). However, the use of the heuristic function reduces the size of the search space, and the algorithm typically runs much faster in practice. The time complexity of the algorithm can be expressed as O(b^d), where b is the branching factor (i.e., the average number of moves available from each state) and d is the depth of the shallowest goal node.
+The time complexity of the solve function depends on the size of the search space and the efficiency of the heuristic function. In the worst case, the algorithm explores the entire search space, which is of size `O((N^2)!)`. However, the use of the heuristic function reduces the size of the search space, and the algorithm typically runs much faster in practice. The time complexity of the algorithm can be expressed as `O(b^d)`, where b is the branching factor (i.e., the average number of moves available from each state) and d is the depth of the shallowest goal node.
 
 ### `Space Complexity`
-The space complexity of the solve function is determined by the size of the priority queue used to store the live nodes of the search tree. The priority queue can hold at most O(b^d) nodes, so the space complexity of the algorithm is also O(b^d).
+The space complexity of the solve function is determined by the size of the priority queue used to store the live nodes of the search tree. The priority queue can hold at most `O(b^d)` nodes, so the space complexity of the algorithm is also O(b^d).
 
 ## Code:
 ```cpp
