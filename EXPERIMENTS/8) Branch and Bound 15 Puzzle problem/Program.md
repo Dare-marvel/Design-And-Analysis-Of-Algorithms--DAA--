@@ -1,3 +1,25 @@
+### [15 Puzzle Problem](https://www.geeksforgeeks.org/8-puzzle-problem-using-branch-and-bound/)
+
+## Explanation of the main logic:
+The solve() function uses the Branch and Bound algorithm to solve the N-puzzle problem. It takes the initial state of the puzzle, the coordinates of the blank tile (i.e., the tile that can be moved), and the final state of the puzzle as input parameters. The function creates a priority queue to store live nodes of the search tree, which are nodes that have been generated but have not yet been expanded.
+
+The algorithm starts by creating a root node that represents the initial state of the puzzle. The cost of the root node is calculated as the number of misplaced tiles between the initial and final state of the puzzle. The root node is added to the priority queue.
+
+The function then enters a loop that continues until the priority queue is empty. In each iteration of the loop, the node with the least estimated cost (i.e., the sum of its cost and level) is removed from the priority queue. If the removed node is an answer node (i.e., its cost is zero), the function prints the path from the root node to the answer node and returns.
+
+If the removed node is not an answer node, the function generates its children nodes by moving the blank tile in all four possible directions (up, down, left, right) and creating a new node for each valid move. The cost of each child node is calculated as the number of misplaced tiles between the state of the puzzle represented by the child node and the final state of the puzzle.
+
+The children nodes are then added to the priority queue. The loop continues until an answer node is found or the priority queue is empty.
+
+Note that the priority queue is ordered based on the estimated cost of each node. This ensures that the algorithm explores nodes with lower estimated cost first, which is a heuristic that can improve the efficiency of the search.
+
+## Time and Space Complexity:
+### `Time Complexity`
+The time complexity of the solve function depends on the size of the search space and the efficiency of the heuristic function. In the worst case, the algorithm explores the entire search space, which is of size O((N^2)!). However, the use of the heuristic function reduces the size of the search space, and the algorithm typically runs much faster in practice. The time complexity of the algorithm can be expressed as O(b^d), where b is the branching factor (i.e., the average number of moves available from each state) and d is the depth of the shallowest goal node.
+
+### `Space Complexity`
+The space complexity of the solve function is determined by the size of the priority queue used to store the live nodes of the search tree. The priority queue can hold at most O(b^d) nodes, so the space complexity of the algorithm is also O(b^d).
+
 ## Code:
 ```cpp
 // Program to print path from root node to destination node
