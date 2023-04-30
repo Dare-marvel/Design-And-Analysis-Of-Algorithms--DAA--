@@ -1,4 +1,5 @@
 ### [15 Puzzle Problem](https://www.geeksforgeeks.org/8-puzzle-problem-using-branch-and-bound/)
+### [Solvability of a 15 puzzle problem](https://www.geeksforgeeks.org/check-instance-8-puzzle-solvable/)
 
 ## Explanation of the main logic:
 The solve() function uses the Branch and Bound algorithm to solve the N-puzzle problem. It takes the initial state of the puzzle, the coordinates of the blank tile (i.e., the tile that can be moved), and the final state of the puzzle as input parameters. The function creates a priority queue to store live nodes of the search tree, which are nodes that have been generated but have not yet been expanded.
@@ -24,7 +25,6 @@ The space complexity of the solve function is determined by the size of the prio
 ```cpp
 // Program to print path from root node to destination node
 // for N*N -1 puzzle algorithm using Branch and Bound
-// The solution assumes that instance of puzzle is solvable
 #include <bits/stdc++.h>
 #include <cstdlib>
 using namespace std;
