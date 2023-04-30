@@ -26,6 +26,7 @@ The space complexity of the solve function is determined by the size of the prio
 // for N*N -1 puzzle algorithm using Branch and Bound
 // The solution assumes that instance of puzzle is solvable
 #include <bits/stdc++.h>
+#include <cstdlib>
 using namespace std;
 #define N 4
 
@@ -188,6 +189,27 @@ void solve(int initial[N][N], int x, int y,
 	}
 }
 
+int getInvCount(int arr[])
+{
+    int inv_count = 0;
+    for (int i = 0; i < 16 - 1; i++)
+        for (int j = i+1; j < 16; j++)
+             // Value 0 is used for empty space
+             if (arr[j] && arr[i] &&  arr[i] > arr[j])
+                  inv_count++;
+    return inv_count;
+}
+ 
+// This function returns true if given 8 puzzle is solvable.
+bool isSolvable(int puzzle[4][4])
+{
+    // Count inversions in given 8 puzzle
+    int invCount = getInvCount((int *)puzzle);
+ 
+    // return true if inversion count is even.
+    return (invCount%2 == 0);
+}
+
 // Driver code
 int main() {
     int initial[N][N], final[N][N];
@@ -200,9 +222,14 @@ int main() {
             cin >> initial[i][j];
         }
     }
-
+    
+    if(!isSolvable(initial)){
+        cout << "\nNot Solvable\n";
+        exit(0);
+    }
+                      
     // take user input for the final configuration
-    cout << "Enter the final configuration (0 for empty space):\n";
+    cout << "\nEnter the final configuration (0 for empty space):\n";
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
             cin >> final[i][j];
