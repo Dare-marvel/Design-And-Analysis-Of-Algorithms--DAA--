@@ -1,3 +1,14 @@
+### [Convex Hull](https://www.geeksforgeeks.org/convex-hull-using-divide-and-conquer-algorithm/)
+
+## Explanation of the Code:
+
+The given code implements two algorithms to solve the closest pair of points problem, i.e., given a set of points in a 2-D plane, find the pair of points that are closest to each other. The two algorithms implemented are:
+
+* Brute force algorithm: It checks all possible pairs of points and finds the pair with the minimum distance between them. This algorithm has a time complexity of O(n^3), where n is the number of points.
+* Divide and conquer algorithm: It divides the set of points into two halves, recursively finds the closest pair in each half, and merges the two halves by finding the closest pair in the strip between the two halves. This algorithm has a time complexity of O(nlogn).
+
+The code defines a structure "Point" to represent a point in 2-D space and implements a function "dist" to calculate the Euclidean distance between two points. The "orientation" function is used to find the orientation of three points (clockwise, counterclockwise, or collinear) and is used in the implementation of the Graham's Scan algorithm, which is used to find the convex hull of the set of points in the divide and conquer algorithm. The "graham_scan" function implements the Graham's Scan algorithm and returns the perimeter of the convex hull of the set of points. The "min" function finds the minimum distance between all possible pairs of points in a set of points. The "divide_and_conquer" function implements the divide and conquer algorithm and returns the closest pair of points in the set of points. The main function generates a set of 50 random points and calls both the algorithms to find the closest pair of points and prints the output.
+
 ## Code:
 ```c
 #include <stdio.h>
