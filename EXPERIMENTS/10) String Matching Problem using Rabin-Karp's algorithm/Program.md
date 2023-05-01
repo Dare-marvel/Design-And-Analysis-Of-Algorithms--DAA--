@@ -16,7 +16,8 @@ The Rabin-Karp algorithm is a string searching algorithm that works by hashing t
 
 ## Time and Space Complexity:
 ### `Time Complexity`
-The time complexity of the Rabin-Karp algorithm depends on the hash function used, which in this case is a simple polynomial rolling hash function. The worst-case time complexity of the algorithm is O((n-m+1)*m), where n is the length of the text and m is the length of the pattern. However, on average, the algorithm has a much better performance than the worst-case complexity, and its time complexity is usually O(n+m) when the hash function works well.
+The average and best-case running time of the Rabin-Karp algorithm is O(n+m), but its worst-case time is O(nm).
+The worst case of the Rabin-Karp algorithm occurs when all characters of pattern and text are the same as the hash values of all the substrings of txt[] match with the hash value of pat[]. 
 
 ### `Space Complexity`
 The space complexity of the algorithm is O(1) because the only extra space used is for storing some variables such as the hash values and loop counters. Therefore, the space complexity is constant and does not depend on the size of the input.
