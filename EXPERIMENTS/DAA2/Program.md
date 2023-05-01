@@ -1,3 +1,9 @@
+### [QuickSort](https://www.geeksforgeeks.org/quick-sort/)
+### [MergeSort](https://www.geeksforgeeks.org/merge-sort/)
+### [Comparison](https://www.geeksforgeeks.org/quick-sort-vs-merge-sort/)
+
+## Code:
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -135,3 +141,4 @@ int main()
     }
     return 0;
 }
+```
