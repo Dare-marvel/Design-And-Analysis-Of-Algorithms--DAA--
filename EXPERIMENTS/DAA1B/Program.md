@@ -1,3 +1,7 @@
+### [Insertion Sort](https://www.geeksforgeeks.org/insertion-sort/)
+### [Selection Sort](https://www.geeksforgeeks.org/selection-sort/)
+### [Comparison](https://www.geeksforgeeks.org/difference-between-insertion-sort-and-selection-sort/)
+
 ## Code:
 ```c
 #include <stdio.h>
