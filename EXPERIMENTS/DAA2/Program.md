@@ -2,6 +2,20 @@
 ### [MergeSort](https://www.geeksforgeeks.org/merge-sort/)
 ### [Comparison](https://www.geeksforgeeks.org/quick-sort-vs-merge-sort/)
 
+## Explanation of the Code:
+Import necessary libraries: The program starts by importing the necessary C standard libraries - stdio.h, stdlib.h, and time.h.
+
+* Define the partition function: The partition function implements the partition step of the Quick Sort algorithm. It takes an array, a start index, and an end index as arguments and returns the index of the pivot element. The function selects the pivot element as the last element of the array, and then partitions the array into two subarrays such that all elements less than the pivot element are on the left side of the pivot element and all elements greater than or equal to the pivot element are on the right side.
+* Define the quick function: The quick function implements the Quick Sort algorithm. It takes an array, a start index, and an end index as arguments and sorts the array in ascending order using the Quick Sort algorithm. The function first partitions the array around the pivot element using the partition function and then recursively applies the same steps to the left and right subarrays.
+* Define the merge function: The merge function implements the merge step of the Merge Sort algorithm. It takes an array, a left index, a middle index, and a right index as arguments and merges two sorted subarrays into a single sorted array.
+* Define the mergeSort function: The mergeSort function implements the Merge Sort algorithm. It takes an array, a left index, and a right index as arguments and sorts the array in ascending order using the Merge Sort algorithm. The function first divides the array into two subarrays using the middle index and then recursively applies the same steps to the left and right subarrays. The merge function is used to merge the sorted subarrays.
+* Generate random numbers and write them to a file: The program generates 100,000 random integers between 100,000 and 1,000,000 using the rand() function and writes them to a file named "randomnum.txt" using the fopen() and fprintf() functions.
+* Sort arrays of increasing sizes and measure execution time: The program reads the random numbers from the "randomnum.txt" file and initializes two arrays - arr1 and arr2 - with the same set of random integers. The program then measures the execution time of Merge Sort and Quick Sort on each array for increasing sizes of arrays, starting from 100 elements and increasing by 100 for each iteration, up to 10,000 elements.
+* Measure execution time using clock() function: The execution time is measured using the clock() function from the time.h library. The function returns the number of clock ticks elapsed since the program started. The difference between the clock values before and after the sorting function call is used to compute the execution time.
+* Print the execution time: The program outputs the execution time for each algorithm for each array size, separated by a tab character. The output is in the format of three columns: iteration count, Merge Sort execution time, and Quick Sort execution time.
+* Close the file and exit the program: Finally, the program closes the file using the fclose() function and exits with a return value of 0.
+
+
 ## Code:
 ```c
 #include <stdio.h>
