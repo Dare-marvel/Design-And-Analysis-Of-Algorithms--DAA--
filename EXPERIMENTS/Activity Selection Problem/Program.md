@@ -94,7 +94,7 @@ int activitySelectionDP(struct activity arr[], int n, struct activity nonOverlap
 
     // printing non-overlapping activities
     printf("\nNon-overlapping activities using dynamic programming:\n");
-    int i, j;
+    int i = 0, j = 0;
     while (i <= n - 1 && j <= maxCount - 1)
     {
         if (dp[i] == j + 1)
@@ -145,9 +145,9 @@ void activitySelectionGREEDY(struct activity arr[], int n, struct activity nonOv
 int main()
 {
     // creating random activities
-    int n ;
+    int n;
     printf("Enter the value of n:\n");
-    scanf("%d",&n);
+    scanf("%d", &n);
     struct activity arr[n];
     for (int i = 0; i < n; i++)
     {
@@ -176,6 +176,7 @@ int main()
     printf("Greedy Algorithm :\nTime taken: %f seconds", time2);            // printing time required for Greedy algorithm
     return 0;
 }
+
 ```
 ## Output:
 ```
