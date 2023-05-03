@@ -15,10 +15,10 @@ This process continues until all possible subsets of the input set are explored.
 
 ## Time and Space Complexity :
 `Time Complexity`<br>
-The time complexity of the backtrack function is O(2^n), where n is the number of elements in the input set. This is because the function explores all possible subsets of the input set, which is a binary tree with 2^n nodes. Each node in the tree represents a subset of the input set.
+The time complexity of the backtrack function is `O(2^n)`, where n is the number of elements in the input set. This is because the function explores all possible subsets of the input set, which is a binary tree with 2^n nodes. Each node in the tree represents a subset of the input set.
 
 `Space Complexity`<br>
-The space complexity of the function is O(n), where n is the number of elements in the input set. This is because the function uses two arrays of size n to store the binary vector representing a subset and the weights of the n elements. Additionally, the function uses three integer variables to store the current element index, the desired sum, and the sum of elements in a subset. The function does not use any additional data structures or variables, so the space complexity is linear in n.
+The space complexity of the function is `O(n)`, where n is the number of elements in the input set. This is because the function uses two arrays of size n to store the binary vector representing a subset and the weights of the n elements. Additionally, the function uses three integer variables to store the current element index, the desired sum, and the sum of elements in a subset. The function does not use any additional data structures or variables, so the space complexity is linear in n.
 
 ## Code:
 ```c
