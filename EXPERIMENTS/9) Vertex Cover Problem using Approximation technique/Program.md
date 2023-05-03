@@ -17,10 +17,10 @@ The algorithm follows a greedy approach by selecting an uncovered edge and addin
 
 ## Time and Space Complexity:
 ### `Time Complexity`:
-The time complexity of the function is O(V+E), where V is the number of vertices and E is the number of edges in the graph. This is because the function loops through each vertex and its adjacent vertices, and each edge is processed only once.
+The time complexity of the function is `O(V+E)`, where V is the number of vertices and E is the number of edges in the graph. This is because the function loops through each vertex and its adjacent vertices, and each edge is processed only once.
 
 ### `Space Complexity`:
-The space complexity of the function is O(V), where V is the number of vertices in the graph. This is because the function uses a boolean array to keep track of visited vertices.
+The space complexity of the function is `O(V)`, where V is the number of vertices in the graph. This is because the function uses a boolean array to keep track of visited vertices.
 
 ## Code:
 ```cpp
