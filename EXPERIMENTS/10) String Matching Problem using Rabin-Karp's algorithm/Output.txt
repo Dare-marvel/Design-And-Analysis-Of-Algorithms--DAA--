@@ -1,4 +1,0 @@
-Enter the text: The quick brown fox jumps over the lazy dog
-Enter the pattern to search for: fox
-Matches found:
-Pattern found in text starting at index 16 and ending at index 18.
